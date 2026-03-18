@@ -427,88 +427,24 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    /* CARD */
-    .card {
-        width: 90%;
-        padding: 20px;
-    }
-
-    .container-card {
-        height: auto;
-        padding: 40px 10px;
-    }
-
-    /* HEADER */
-    header {
-        flex-direction: column;
-        gap: 10px;
-        padding: 15px 20px;
-        text-align: center;
-    }
-
     nav {
         display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    /* HERO */
-    .hero {
-        height: auto;
-        padding: 60px 0;
-    }
-
-    .texto {
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .texto h1 {
-        font-size: 26px;
-    }
-
-    /* SOLUÇÕES */
-    .solucoes {
-        padding: 40px 20px;
-    }
-
-    .solucoes-wrapper {
         flex-direction: column;
-        gap: 20px;
-    }
-
-    .solucoes-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .sol-card {
+        gap: 10px;
         width: 100%;
-        max-width: 300px;
+        margin-top: 10px;
     }
 
-    /* SERVIÇOS */
-    .servicos-topo h1 {
-        font-size: 28px;
+    nav a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #eee;
+        border-radius: 8px;
     }
 
-    /* DADOS */
-    .numero-dado ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .numero-dado li {
-        border-right: none;
-        width: 90%;
-    }
-
-    .texto-dado h1 {
-        font-size: 26px;
-    }
-
-    /* FORM */
-    .contato {
-        padding: 40px 15px;
+    .btn-header {
+        width: 100%;
+        text-align: center;
     }
 }
