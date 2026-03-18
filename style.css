@@ -431,14 +431,14 @@ button:hover {
     transform: scale(1.03);
 }
 
-/* ================= MOBILE RESPONSIVO ================= */
+
 @media (max-width: 768px) {
 
     body {
         padding: 0 10px;
     }
 
-    /* HEADER */
+   
     header {
         flex-direction: column;
         gap: 10px;
@@ -451,7 +451,7 @@ button:hover {
         justify-content: center;
     }
 
-    /* HERO */
+   
     .texto {
         padding: 20px;
         text-align: center;
@@ -461,7 +461,7 @@ button:hover {
         font-size: 28px;
     }
 
-    /* SOLUÇÕES */
+    
     .solucoes-wrapper {
         flex-direction: column;
     }
@@ -482,12 +482,12 @@ button:hover {
         max-width: 300px;
     }
 
-    /* SERVIÇOS */
+   
     .servicos-grid {
         grid-template-columns: 1fr;
     }
 
-    /* DADOS */
+   
     .numero-dado ul {
         flex-direction: column;
         align-items: center;
@@ -499,7 +499,7 @@ button:hover {
         max-width: 300px;
     }
 
-    /* FORMULÁRIO */
+    
     .contato {
         padding: 40px 15px;
     }
@@ -508,7 +508,7 @@ button:hover {
         font-size: 16px;
     }
 
-    /* BOTÕES */
+   
     .btn {
         padding: 18px;
         width: 100%;
@@ -516,7 +516,7 @@ button:hover {
         margin: 10px auto;
     }
 
-    /* CARDS GERAIS */
+   
     .card {
         width: 100%;
         max-width: 320px;
