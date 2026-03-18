@@ -432,28 +432,51 @@ button:hover {
 }
 
 
+/* ===========================
+   MOBILE RESPONSIVO (até 768px)
+=========================== */
 @media (max-width: 768px) {
-
-    body {
-        padding: 0 10px;
+    /* Body e HTML */
+    html, body {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
     }
 
-   
+    body {
+        padding: 0;
+    }
+
+    /* Header */
     header {
         flex-direction: column;
-        gap: 10px;
+        align-items: center;
         text-align: center;
+        gap: 10px;
+        padding: 15px 10px;
     }
 
     nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
 
-   
+    .btn-header {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Hero e Texto */
+    .hero {
+        height: 60vh;
+    }
+
     .texto {
-        padding: 20px;
+        padding: 20px 10px;
+        max-width: 100%;
         text-align: center;
     }
 
@@ -461,54 +484,85 @@ button:hover {
         font-size: 28px;
     }
 
-    
-    .solucoes-wrapper {
-        flex-direction: column;
+    .texto p {
+        font-size: 16px;
     }
 
-    .solucoes-texto,
-    .solucoes-cards {
-        width: 100%;
+    /* Seções de soluções */
+    .solucoes-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .solucoes-texto, .solucoes-cards {
+        width: 95%;
         text-align: center;
     }
 
     .solucoes-cards {
         flex-direction: column;
         align-items: center;
+        padding: 0;
+        margin: 0 auto;
     }
 
     .sol-card {
-        width: 90%;
-        max-width: 300px;
+        width: 95%;
+        max-width: 320px;
+        margin-bottom: 20px;
     }
 
-   
+    /* Serviços */
     .servicos-grid {
         grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 0 10px;
     }
 
-   
+    .servico-card {
+        width: 100%;
+    }
+
+    /* Número de dados */
     .numero-dado ul {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .numero-dado li {
-        border-right: none;
-        width: 100%;
+        width: 95%;
         max-width: 300px;
+        border-right: none;
     }
 
-    
+    /* Cards gerais */
+    .card {
+        width: 95%;
+        max-width: 320px;
+        margin: 0 auto 20px auto;
+    }
+
+    /* Formulário e Contato */
     .contato {
-        padding: 40px 15px;
+        width: 95%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 40px 10px;
     }
 
     input, select, button {
+        width: 100%;
         font-size: 16px;
+        box-sizing: border-box;
     }
 
-   
+    button {
+        max-width: none;
+    }
+
+    /* Botões gerais */
     .btn {
         padding: 18px;
         width: 100%;
@@ -516,10 +570,28 @@ button:hover {
         margin: 10px auto;
     }
 
-   
-    .card {
-        width: 100%;
-        max-width: 320px;
+    /* Ajustes de ícones */
+    .icons {
+        justify-content: center;
+        font-size: 22px;
+    }
+
+    /* Espaçamentos */
+    .servicos-topo h1 {
+        font-size: 32px;
+    }
+
+    .servicos-topo p {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    .texto-dado h1 {
+        font-size: 32px;
+    }
+
+    .texto-dado span {
+        font-size: 18px;
     }
 }
 
