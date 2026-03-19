@@ -152,17 +152,21 @@ header {
     transform: scale(1.05);
     filter: drop-shadow(0 6px 14px rgba(0,0,0,0.2));
 }
-nav {
-    display: flex;
-    align-items: center;
-    gap: 24px;
-    flex-wrap: wrap;
-    justify-content: center;
-}
+    nav {
+        order: 1;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        overflow: hidden;
+        white-space: normal;
+    }
+
 
 nav a {
     color: #111;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     transition: var(--transition);
     position: relative;
