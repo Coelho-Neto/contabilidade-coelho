@@ -149,7 +149,7 @@ ul {
   background: rgba(255, 255, 255, 0.15);
 }
 
-/* TOPBAR */
+
 .topbar {
   background: #081015;
   color: #fff;
@@ -175,7 +175,7 @@ ul {
   margin-right: 7px;
 }
 
-/* HEADER */
+
 .header {
   position: sticky;
   top: 0;
@@ -271,7 +271,7 @@ ul {
   transform: translateY(-7.5px) rotate(-45deg);
 }
 
-/* HERO */
+
 .hero {
   min-height: calc(100vh - 120px);
   position: relative;
@@ -372,7 +372,7 @@ ul {
   font-size: 14px;
 }
 
-/* TRUST */
+
 .trust-bar {
   background: #fff;
   border-bottom: 1px solid var(--border);
@@ -393,7 +393,7 @@ ul {
   color: var(--text-soft);
 }
 
-/* SOLUTIONS */
+
 .solutions-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -439,7 +439,7 @@ ul {
   line-height: 1.8;
 }
 
-/* SERVICES */
+
 .services-section {
   background: linear-gradient(135deg, #0a3940, #0d8f93);
 }
@@ -481,7 +481,7 @@ ul {
   line-height: 1.8;
 }
 
-/* DIFFERENTIALS */
+
 .differenciais-grid {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -559,7 +559,7 @@ ul {
   margin-bottom: 24px;
 }
 
-/* CONTACT */
+
 .contact-section {
   background: linear-gradient(180deg, #f7fbfb 0%, #eef8f8 100%);
 }
@@ -619,7 +619,7 @@ ul {
   background: #1fb85a;
 }
 
-/* LOCATION */
+
 .location-grid {
   display: grid;
   grid-template-columns: 0.92fr 1.08fr;
@@ -681,7 +681,7 @@ ul {
   border: 0;
 }
 
-/* FOOTER */
+
 .footer {
   background: #071015;
   color: #e8eef0;
@@ -734,7 +734,7 @@ ul {
   font-size: 14px;
 }
 
-/* REVEAL */
+
 .reveal {
   opacity: 0;
   transform: translateY(45px);
@@ -747,7 +747,7 @@ ul {
   transform: translateY(0);
 }
 
-/* RESPONSIVO */
+
 @media (max-width: 1100px) {
   .solutions-grid {
     grid-template-columns: repeat(2, 1fr);
