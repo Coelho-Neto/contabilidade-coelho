@@ -13,7 +13,7 @@
     --transition: 0.35s ease;
 }
 
-/* RESET */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,13 +63,13 @@ div {
     max-width: 100%;
 }
 
-/* CONTAINER PADRÃO */
+
 .container {
     width: min(1200px, calc(100% - 32px));
     margin: 0 auto;
 }
 
-/* REVEAL ANIMATION */
+
 .reveal {
     opacity: 0;
     transform: translateY(45px);
@@ -82,7 +82,7 @@ div {
     transform: translateY(0);
 }
 
-/* TOPO */
+
 .topo {
     background: #000;
     color: var(--branco);
@@ -111,7 +111,7 @@ div {
     white-space: nowrap;
 }
 
-/* HEADER */
+
 header {
     background: var(--cinza-claro);
     position: sticky;
@@ -123,7 +123,7 @@ header {
 .header-container {
     width: min(1200px, calc(100% - 32px));
     margin: 0 auto;
-    min-height: 88px;
+    height: 90px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -131,12 +131,22 @@ header {
 }
 
 .logo {
-    font-size: 26px;
-    font-weight: 800;
-    color: #000;
-    letter-spacing: 0.5px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     flex-shrink: 0;
+}
+
+.logo img {
+    padding-top: 10px;
+    height: 200px;
+    width: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.05);
 }
 
 nav {
@@ -193,7 +203,6 @@ nav a:hover::after {
     background: #196767;
 }
 
-/* CARD INICIAL */
 .container-card {
     min-height: 100vh;
     display: flex;
@@ -270,7 +279,7 @@ nav a:hover::after {
     background: #196767;
 }
 
-/* HERO */
+
 .hero {
     min-height: 88vh;
     background: url('https://images.unsplash.com/photo-1554224155-6726b3ff858f') center/cover no-repeat;
@@ -608,9 +617,14 @@ footer {
 /* TABLET */
 @media (max-width: 1024px) {
     .header-container {
-        min-height: auto;
-        padding: 18px 0;
-        flex-direction: column;
+        height: 82px;
+        padding: 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        height: 62px;
     }
 
     nav {
@@ -647,8 +661,7 @@ footer {
 
 /* MOBILE */
 @media (max-width: 768px) {
-    .container,
-    .header-container {
+    .container {
         width: min(100%, calc(100% - 24px));
     }
 
@@ -673,6 +686,14 @@ footer {
     .logo {
         font-size: 18px;
         line-height: 1.2;
+    }
+
+     .header-container {
+        height: 70px;
+    }
+
+    .logo img {
+        height: 55px;
     }
 
     nav {
@@ -813,6 +834,9 @@ footer {
     .contato h2 {
         font-size: 24px;
     }
+    .logo img {
+        height: 45px;
+    }
 }
 
 .reveal {
@@ -825,6 +849,8 @@ footer {
     opacity: 1;
     transform: translateY(0);
 }
+
+
 
 
 
